@@ -1,0 +1,36 @@
+.mainHead {
+    font-size: 15px;
+    color: black;
+}
+
+.midHead {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+.subHead {
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+}
+
+.m-8 {
+    margin: 8px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pb-8 {
+    padding-bottom: 8px;
+}
+
+.pt-8 {
+    padding-top: 8px;
+}
+
+.bg-gray {
+    background-color: #f6f6f6;
+}

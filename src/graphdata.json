@@ -1,0 +1,16 @@
+[
+    { "commitment": 0.34, "savings": 1000 },
+    { "commitment": 0.64, "savings": 1050 },
+    { "commitment": 1.32, "savings": 1500 },
+    { "commitment": 2.34, "savings": 2300 },
+    { "commitment": 2.64, "savings": 2652 },
+    { "commitment": 3.32, "savings": 2859 },
+    { "commitment": 3.64, "savings": 5122 },
+    { "commitment": 3.94, "savings": 5252 },
+    { "commitment": 4.14, "savings": 5662 },
+    { "commitment": 4.52, "savings": 5782 },
+    { "commitment": 7.34, "savings": 5892 },
+    { "commitment": 8.14, "savings": 6212 },
+    { "commitment": 8.32, "savings": 6334 },
+    { "commitment": 9.64, "savings": 6359 }
+]

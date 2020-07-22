@@ -2,7 +2,7 @@
 
 ## 22 July 2020
 
-    > Created a new react app
+    > Created a new react app & Installed material ui (As per requirement).
     > Created a new github and gitbucket repository and connected it to local react app repo.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -4,6 +4,13 @@ import Typography from "@material-ui/core/Typography";
 import InfoIcon from '@material-ui/icons/Info';
 import { makeStyles } from '@material-ui/core/styles';
 
+/*
+
+This component is used for popover on hover {data is being sent as props to this comp}
+
+*/
+
+// Styling of the popovers
 const useStyles = makeStyles((theme) => ({
     popover: {
         pointerEvents: "none"
@@ -22,9 +29,11 @@ function PopOverComp(props) {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
 
+    // States to handle the position of hover detected
     const [posX, setPosX] = React.useState(null);
     const [posY, setPosY] = React.useState(null);
 
+    // If hover happens, position of x and y coordinates will be updates and popover will be shown at 40 px above detected point.
     const handlePopoverOpen = event => {
         setAnchorEl(event.currentTarget);
         setPosX(event.clientX);

@@ -6,6 +6,15 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 
+/*
+
+This component will show a price input field with $ sympbol at first.
+
+Headline text and helper text is being passed to this component as props.
+
+*/
+
+// Form field styling
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',

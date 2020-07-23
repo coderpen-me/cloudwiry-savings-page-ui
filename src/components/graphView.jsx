@@ -5,6 +5,13 @@ import GraphComp from './GraphComp.jsx';
 import { fade, makeStyles } from '@material-ui/core/styles';
 var localData = require('../graphdata.json');
 
+/*
+
+This component renders graph and filters below graph
+
+*/
+
+// These are graph values to be sent to GraphComp to render graph based on sent labels and values.
 const labels = [];
 const values = [];
 
@@ -17,6 +24,7 @@ export default function GraphView() {
 
     const [update, setUpdate] = React.useState(0);
 
+    // ComponentDidMount -> fetches data to be shown from backend server. (For now, if data is not retrieved, I have used local copy of mock data. But, we can show error message in original deploy.)
     useEffect(() => {
         fetch('https://cors-anywhere.herokuapp.com/https://bit.ly/2OO7uWU')
             .then(response => response.json())
@@ -39,7 +47,7 @@ export default function GraphView() {
             });
     }, []);
 
-
+    // Custom Style for filter selectors below graph. 
     const useStyles = makeStyles({
         root: {
             boxSizing: 'border-box',
@@ -95,7 +103,7 @@ export default function GraphView() {
     return (
         <>
             <GraphComp labels={labels} values={values} />
-            <div style={{textAlign : 'center'}}>
+            <div style={{ textAlign: 'center' }}>
                 {"Filters By Recent Days :  "}
                 <ToggleButtonGroup
                     value={alignment}

@@ -2,6 +2,12 @@ import React, { useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import CircularUnderLoad from './loader.jsx';
 
+/*
+
+This component will render graph view based on labels and values sent to this comp as props. 
+
+*/
+
 const data = {
     labels: [],
     datasets: [
@@ -31,6 +37,8 @@ const data = {
 
 function GraphComp(props) {
 
+    // ComponenDidMount -> As soon component is mounted, data would be fead using props. 
+    // If data is not available, loader will be shown.
     useEffect(() => {
         data.labels = props.labels;
         data.datasets[0].data = props.values;

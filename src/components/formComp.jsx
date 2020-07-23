@@ -1,16 +1,25 @@
 import React from 'react';
+
+import { makeStyles } from '@material-ui/core/styles';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
+
 import PopOverComp from "./popoverComp.jsx";
 
+/*
+
+This component renders all input parameter's UI
+
+*/
+
+// Styling used in form
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
@@ -28,28 +37,32 @@ function TopForm() {
 
     const classes = useStyles();
 
+    // States for input for Savings plan type
     const [plan, setPlan] = React.useState('Compute Savings Plans');
     const handleChangePlan = (event) => {
         setPlan(event.target.value);
     };
 
+    // States for input time period
     const [term, setTerm] = React.useState('3-Year');
     const handleChangeTerm = (event) => {
         setTerm(event.target.value);
     };
 
+    // States for input payment type
     const [method, setMethod] = React.useState('No Upfront');
     const handleChangeMethod = (event) => {
         setMethod(event.target.value);
     };
 
+    // State for Account selected
     const [account, setAccount] = React.useState('');
     const handleChangeAccount = (event) => {
         setAccount(event.target.value);
     };
 
+    // State for check box.
     const [checked, setChecked] = React.useState(false);
-
     const handleChangeChecked = (event) => {
         setChecked(event.target.checked);
     };

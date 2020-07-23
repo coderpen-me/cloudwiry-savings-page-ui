@@ -1,11 +1,20 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
-import PriceComp from './PriceComp.jsx';
+
 import { Box } from '@material-ui/core';
 import AssessmentIcon from '@material-ui/icons/Assessment';
+import Grid from '@material-ui/core/Grid';
+
+import PriceComp from './PriceComp.jsx';
 import GraphView from './graphView.jsx';
+
 import './stats.css';
+
+/*
+
+This component will show a graphview (which includes graph and filters) & stats on right side.
+
+*/
 
 const useStyles = makeStyles((theme) => ({
   root: {
